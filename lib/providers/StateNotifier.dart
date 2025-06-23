@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'main.dart';
+import '../main.dart';
 
 
 class SN_homePage extends ConsumerWidget {
@@ -12,7 +12,6 @@ class SN_homePage extends ConsumerWidget {
 
     ref.read(NProvider.notifier).updateAge(age);
   }
-
 
   @override
   Widget build(BuildContext context,WidgetRef ref) {
